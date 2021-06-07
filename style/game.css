@@ -1,0 +1,65 @@
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    color: #333;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background-color: white;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    color:  #56a5eb;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1rem 0 rgba(86, 185, 235, 0.5);
+    transform: translate3d(0.1rem, -0.1rem, -0.1rem);
+    transition: 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem;
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+#progressText{
+    margin-bottom: 1rem;
+}
+
+#progressBar{
+    border: 0.3rem solid #56a5eb;
+    height: 4rem;
+    width: 20rem;
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    width: 0%;
+    background-color: #56a5eb;
+}
