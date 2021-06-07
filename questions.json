@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What's my name ?",
+        "choice1": "Achraf",
+        "choice2": "Laurent",
+        "choice3": "Quatadah",
+        "choice4": "Jesaispas",
+        "answer": 3
+    },
+    {
+        "question": "What's my last name ?",
+        "choice1": "Hakimi",
+        "choice2": "Laurent",
+        "choice3": "Nasdami",
+        "choice4": "Jesaispas",
+        "answer": 3
+    },
+    {
+        "question": "Where was I born ?",
+        "choice1": "Marrakech",
+        "choice2": "Salé",
+        "choice3": "Rabat",
+        "choice4": "Paris",
+        "answer": 1
+    }
+]

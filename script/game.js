@@ -12,32 +12,20 @@ let questionCounter = 0;
 let availableQuestions = [];
 let bar = document.getElementById("progressBarFull")
 
-let questions = [
-    {
-        question: "What's my name ?",
-        choice1: "Achraf",
-        choice2: "Laurent",
-        choice3: "Quatadah",
-        choice4: "Jesaispas",
-        answer: 3
-    },
-    {
-        question: "What's my last name ?",
-        choice1: "Hakimi",
-        choice2: "Laurent",
-        choice3: "Nasdami",
-        choice4: "Jesaispas",
-        answer: 3
-    },
-    {
-        question: "Where was I born ?",
-        choice1: "Marrakech",
-        choice2: "Salé",
-        choice3: "Rabat",
-        choice4: "Paris",
-        answer: 1
-    }
-]
+let questions = [];
+
+fetch("../questions.json")
+    .then( res => {
+        console.log(res);
+        return res.json();
+    }).then( loadedQuestions => {
+        console.log(loadedQuestions);
+        questions = loadedQuestions;
+        startGame();
+    })
+    .catch( err => {
+        console.error(err);
+    })
 
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
@@ -105,5 +93,5 @@ callback = () => {
 
 }
 
-startGame(); 
+//startGame(); 
 
