@@ -1,2 +1,2 @@
 # QuizzApp
-This is a small quizz application made with scratch using HTML/CSS/JavaScript.
+This is a small quizz application made with scratch using HTML/CSS/Javascript.
